@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+         display: inline-block;
+         background: #fc0;  
+         border: 3px solid #fff;
+         }
+         
+         img {
+             height: 100px;
+             width: 100px;;
+         }
+
+        
+       </style>
+</head>
+<body>
+
+
+   <script> 
+
+    let d = prompt('Количество блоков?');
+    let i = prompt('Количество картинок');
+    
+   
+    for (let k = 1; k <= d; k++){
+        document.write(`<div>`);
+        for (let g = 1; g <= i && g <=11; g++){
+        document.write(`<img src="images/${g}.jpg">`);  
+        }
+        document.write(`</div>`);
+    }       
+    
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
